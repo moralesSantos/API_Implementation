@@ -34,7 +34,7 @@ public class UserController {
     }
 
     @PutMapping("/users/{id}")
-    public void createUser(@PathVariable(value = "id") Long id, @RequestBody User user){
+    public void updateUser(@PathVariable(value = "id") Long id, @RequestBody User user){
         userRepository.save(user);
     }
 
